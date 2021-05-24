@@ -4,10 +4,10 @@ Working checklist
     [ ] GET route takes jokes already hosted on the server
         [ ] use jQuery to append these items to the DOM
         [ ] update DOM every time a joke is added from POST
-    [ ] POST route takes user info and brings it to the server
-        [ ] add joke click listener 
+    [x] POST route takes user info and brings it to the server
+        [x] add joke click listener 
         [x] eval user data from inputs and send on the push of the add joke button
-        [ ] clear inputs upon sending
+        [x] clear inputs upon sending
 
 [x] Server joke storage 
     [x] GET route to send existing joke data from server to client

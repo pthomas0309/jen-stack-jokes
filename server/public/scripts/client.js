@@ -35,6 +35,8 @@ function createNewJoke() {
         //check for the ok from server
         console.log(response);
     });
+    //run function to get our fresh jokes array for appending
+    getJokes();
 }
 
 // POST
@@ -43,9 +45,10 @@ function createNewJoke() {
 //         jokeQuestion: "Two fish are in a tank. What did one fish say to the other?",
 //         punchLine: "Do you know how to drive this thing?"
 //     }
-//call ajax to POST jokes to server
-// $.ajax({
-//     method: 'POST',
-//     url: '/jokes',
-//     data: joke
-// })
+
+function getJokes(){
+    $.ajax({
+        method: 'GET',
+        url: '/jokes'
+    }).then();
+}
