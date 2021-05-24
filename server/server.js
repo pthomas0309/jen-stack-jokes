@@ -37,6 +37,14 @@ let jokes = [
 // serve back static files
 app.use(express.static('server/public'));
 
+//POST route takes user data to add to jokes array
+app.post('/jokes', (req, res) => {
+  //check request
+  console.log(req.body);
+  //send good response
+  res.sendStatus(201);
+})
+
 //GET route sends our stored jokes to client
 app.get('/jokes', (req, res) => {
   //log we made it to the server

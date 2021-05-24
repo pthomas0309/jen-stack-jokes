@@ -10,7 +10,7 @@ Working checklist
         [ ] clear inputs upon sending
 
 [ ] Server joke storage 
-    [ ] GET route to send existing joke data from server to client
+    [x] GET route to send existing joke data from server to client
     [ ] POST route takes user data from client and pushes it in to the array of joke objects
 
 [ ] Other Stuff
