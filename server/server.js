@@ -63,6 +63,16 @@ app.post('/jokes', (req, res) => {
   res.sendStatus(201);
 })
 
+// GET
+// [
+//     {
+//         whoseJoke: "Luke",
+//         jokeQuestion: "Two fish are in a tank. What did one fish say to the other?",
+//         punchLine: "Do you know how to drive this thing?"
+//     }
+//     ECT...
+// ];
+
 //GET route sends our stored jokes to client
 app.get('/jokes', (req, res) => {
   //log we made it to the server

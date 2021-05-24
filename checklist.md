@@ -9,9 +9,9 @@ Working checklist
         [ ] eval user data from inputs and send on the push of the add joke button
         [ ] clear inputs upon sending
 
-[ ] Server joke storage 
+[x] Server joke storage 
     [x] GET route to send existing joke data from server to client
-    [ ] POST route takes user data from client and pushes it in to the array of joke objects
+    [x] POST route takes user data from client and pushes it in to the array of joke objects
 
 [ ] Other Stuff
     [ ] style
@@ -27,11 +27,11 @@ Data Structure
     }
 
     GET
-    let jokes = [
+    [
         {
             whoseJoke: "Luke",
             jokeQuestion: "Two fish are in a tank. What did one fish say to the other?",
             punchLine: "Do you know how to drive this thing?"
         }
-        ECT...U
+        ECT...
     ];
