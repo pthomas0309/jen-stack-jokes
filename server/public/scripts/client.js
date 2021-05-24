@@ -1,6 +1,6 @@
 console.log('client.js sourced');
 
-$( document ).ready( onReady );
+$(document).ready(onReady);
 
 function onReady() {
     console.log('DOM ready');
@@ -9,7 +9,7 @@ function onReady() {
 }
 
 //will create new joke object to be sent to server
-function createNewJoke(){
+function createNewJoke() {
     console.log('clicked addJoke');
     //Grab info from inputs
     let whoseJoke = $('#whoseJokeIn').val();
@@ -20,7 +20,18 @@ function createNewJoke(){
     $('#whoseJokeIn').val('');
     $('#questionIn').val('');
     $('#punchlineIn').val('');
-    //create object
+    //create object containing user input
+    let newJoke = {
+        whoseJoke: whoseJoke,
+        jokeQuestion: jokeQuestion,
+        punchline: punchline
+    }
+    //call ajax to POST jokes to server
+    $.ajax({
+        method: 'POST',
+        url: '/jokes',
+        data: newJoke
+    }).then();
 }
 
 // POST
