@@ -50,12 +50,12 @@ app.post('/jokes', (req, res) => {
   //variables for new joke obj.
   let whoseJoke = req.body.whoseJoke;
   let jokeQuestion = req.body.jokeQuestion;
-  let punchline = req.body.punchline;
+  let punchLine = req.body.punchLine;
   //push req obj. into jokes array 
   jokes.push({
     whoseJoke: whoseJoke,
     jokeQuestion: jokeQuestion,
-    punchline: punchline
+    punchLine: punchLine
   });
   //check the array
   console.log(jokes);
