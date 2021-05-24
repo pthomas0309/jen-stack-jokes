@@ -37,10 +37,28 @@ let jokes = [
 // serve back static files
 app.use(express.static('server/public'));
 
+// POST
+//     {
+//         whoseJoke: "Luke",
+//         jokeQuestion: "Two fish are in a tank. What did one fish say to the other?",
+//         punchLine: "Do you know how to drive this thing?"
+//     }
 //POST route takes user data to add to jokes array
 app.post('/jokes', (req, res) => {
   //check request
   console.log(req.body);
+  //variables for new joke obj.
+  let whoseJoke = req.body.whoseJoke;
+  let jokeQuestion = req.body.jokeQuestion;
+  let punchline = req.body.punchline;
+  //push req obj. into jokes array 
+  jokes.push({
+    whoseJoke: whoseJoke,
+    jokeQuestion: jokeQuestion,
+    punchline: punchline
+  });
+  //check the array
+  console.log(jokes);
   //send good response
   res.sendStatus(201);
 })
