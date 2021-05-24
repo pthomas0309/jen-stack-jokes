@@ -6,7 +6,7 @@ Working checklist
         [ ] update DOM every time a joke is added from POST
     [ ] POST route takes user info and brings it to the server
         [ ] add joke click listener 
-        [ ] eval user data from inputs and send on the push of the add joke button
+        [x] eval user data from inputs and send on the push of the add joke button
         [ ] clear inputs upon sending
 
 [x] Server joke storage 

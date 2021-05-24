@@ -11,10 +11,16 @@ function onReady() {
 //will create new joke object to be sent to server
 function createNewJoke(){
     console.log('clicked addJoke');
+    //Grab info from inputs
     let whoseJoke = $('#whoseJokeIn').val();
     let jokeQuestion = $('#questionIn').val();
     let punchline = $('#punchlineIn').val();
     console.log(whoseJoke, jokeQuestion, punchline);
+    //clear inputs
+    $('#whoseJokeIn').val('');
+    $('#questionIn').val('');
+    $('#punchlineIn').val('');
+    //create object
 }
 
 // POST
