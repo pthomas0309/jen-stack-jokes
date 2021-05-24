@@ -31,7 +31,10 @@ function createNewJoke() {
         method: 'POST',
         url: '/jokes',
         data: newJoke
-    }).then();
+    }).then(response => {
+        //check for the ok from server
+        console.log(response);
+    });
 }
 
 // POST
