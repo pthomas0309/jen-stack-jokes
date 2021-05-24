@@ -4,11 +4,17 @@ $( document ).ready( onReady );
 
 function onReady() {
     console.log('DOM ready');
+    //handle button click event
     $('#addJokeButton').on('click', createNewJoke)
 }
 
+//will create new joke object to be sent to server
 function createNewJoke(){
     console.log('clicked addJoke');
+    let whoseJoke = $('#whoseJokeIn').val();
+    let jokeQuestion = $('#questionIn').val();
+    let punchline = $('#punchlineIn').val();
+    console.log(whoseJoke, jokeQuestion, punchline);
 }
 
 // POST
